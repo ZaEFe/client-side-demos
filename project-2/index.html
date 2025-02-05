@@ -11,4 +11,12 @@
     <a href="../">Home</a>
     <a href="../project-1/">Project 1</a>
   </body>
+  <script type="module">
+    import _ from "lodash";
+    //Convert the timestamp to a readble date
+    const date = new Date(_.now()).toLocaleString();
+    //Concat message with current date
+    const message = _.concat("Hello today's date is", date);
+    alert(message.join(" "));
+  </script>
 </html>
