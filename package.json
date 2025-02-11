@@ -1,5 +1,6 @@
 {
   "name": "client-side-demos",
+  "repository": "github:zaefe/client-side-demos",
   "private": true,
   "version": "0.0.0",
   "type": "module",
