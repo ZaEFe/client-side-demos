@@ -1,18 +1,22 @@
 //  vite.config.js
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+    plugins: [react()],
     base: "/client-side-demos/",
+    root: "src",
     build: {
-        outDir: "docs",
+        outDir: "../docs",
+        emptyOutDir: true,
         rollupOptions: {
             input: {
-                main: resolve(__dirname, "index.html"),
-                project1: resolve(__dirname, "project-1/index.html"),
-                project2: resolve(__dirname, "project-2/index.html"),
-                about: resolve(__dirname, "about/index.html"),
-                react: resolve(__dirname, "react/index.html")
+                main: resolve(__dirname, "src/index.html"),
+                project1: resolve(__dirname, "src/project-1/index.html"),
+                project2: resolve(__dirname, "src/project-2/index.html"),
+                about: resolve(__dirname, "src/about/index.html"),
+                react: resolve(__dirname, "src/react/index.html"),
             },
         },
     },
