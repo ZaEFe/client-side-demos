@@ -11,6 +11,8 @@ export default defineConfig({
                 main: resolve(__dirname, "index.html"),
                 project1: resolve(__dirname, "project-1/index.html"),
                 project2: resolve(__dirname, "project-2/index.html"),
+                about: resolve(__dirname, "about/index.html"),
+                react: resolve(__dirname, "react/index.html")
             },
         },
     },
