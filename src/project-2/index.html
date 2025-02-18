@@ -8,21 +8,40 @@
     <link rel="stylesheet" href="../styles/sitewide.css">
   </head>
   <body>
+    <header>
+      <div id="title">
+        <h1 class="no-margin">Frontend Portfolio</h1>
+        <p class="no-margin">by Zachary</p>
+      </div>
     <nav>
         <a href="../">Home</a>
         <a href="./about/">About</a>
-        <a href="../project-1/">Project 1: Alert Page</a>
-        <a href="../react/">React Project: </a>
+        <a href="../project-1/">Project 1: Lodash Alert</a>
+        <a href="./">Project 2: Date Button</a>
+        <a href="../react/">React Project: Animals List</a>
     </nav>
-    <h1>Project 2: Button Alert</h1>
-    <p>Click the button for today's date</p>
+    </header>
+    <main>
+      <h2>Project 2: Date Button</h2>
+      <p>Click this button for today's date in an alert</p>
+      <button id="dateButton">Show Date</button>
+      <p id="date"></p>
+    </main>
+    <div style="flex-grow: 1;"></div>
+    <footer>Created by Zachary F in February of 2025</footer>
   </body>
-  <script type="module">
-    import _ from "lodash";
-    //Convert the timestamp to a readble date
-    const date = new Date(_.now()).toLocaleString();
-    //Concat message with current date
-    const message = _.concat("Hello today's date is", date);
-    alert(message.join(" "));
-  </script>
+  <script type="module" src="../scripts/button_alert.js"></script>
+  <!-- <script>
+    // Changed to a module script instead of lodash
+    // import _ from "lodash";
+    // function showAlert() {
+    //   //Convert the timestamp to a readble date
+    //   const date = new Date(_.now()).toLocaleString();
+    //   //Concat message with current date
+    //   const message = _.concat("Hello today's date is", date);
+    //   alert(message.join(" "));
+    // }
+    // const dateButton = document.getElementById("dateButton");
+    // dateButton.addEventListener("click", showAlert);
+  </script> -->
 </html>

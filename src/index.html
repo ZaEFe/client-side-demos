@@ -7,18 +7,28 @@
     <title>Frontend Portfolio</title>
     <link rel="stylesheet" href="./styles/sitewide.css">
   </head>
-  <body> 
+  <body>
+    <header>
+      <div id="title">
+        <h1 class="no-margin">Frontend Portfolio</h1>
+        <p class="no-margin">by Zachary</p>
+      </div>
     <nav>
         <a href="./">Home</a>
         <a href="./about/">About</a>
-        <a href="./project-1/">Project 1: Replicate Alert</a>
-        <a href="./project-2/">Project 2: Welcome W/ Date</a>
-        <a href="./react/">React Page </a>
+        <a href="./project-1/">Project 1: Lodash Alert</a>
+        <a href="./project-2/">Project 2: Date Button</a>
+        <a href="./react/">React Project: Animals List</a>
     </nav>
-    <h1>Home</h1>
-    <p>This is Zachary Fender's Project Page</p>
+    </header>
+    <main>
+      <h2>Home Page</h2>
+      <p>This is Zachary Fender's Project Home Page</p>
+    </main>
+    <div style="flex-grow: 1;"></div>
+    <footer>Created by Zachary F in February of 2025</footer>
   </body>
-  <script type="module">
+  <script type="module" defer>
     import _ from "lodash";
     alert(_.join(["Hello", "Checkout the project pages."], "! "));
   </script>

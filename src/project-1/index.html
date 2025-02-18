@@ -4,20 +4,32 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Replicate Alert</title>
+    <link rel="stylesheet" href="../styles/sitewide.css">
   </head>
   <body>
+    <header>
+      <div id="title">
+        <h1 class="no-margin">Frontend Portfolio</h1>
+        <p class="no-margin">by Zachary</p>
+      </div>
     <nav>
         <a href="../">Home</a>
-        <a href="./about/">About</a>
-        <a href="../project-2/">Project 2: Button Alert</a>
+        <a href="../about/">About</a>
+        <a href="./">Project 1: Lodash Alert</a>
+        <a href="../project-2/">Project 2: Date Button</a>
+        <a href="../react/">React Project: Animals List</a>
     </nav>
-    <h1>Project 1: Lodash Alert</h1>
-    <div>
-        <p>Showing simple use of an alert.</p>
-    </div>
-
-    <script type="module">
+    </header>
+    <main>
+      <h2>Project 1: Lodash Alert</h2>
+      <div>
+          <p>Showing simple use of an alert.</p>
+      </div>
+    </main>
+    <div style="flex-grow: 1;"></div>
+    <footer>Created by Zachary F in February of 2025</footer>
+    <script type="module" defer>
         // import _ from "lodash";
         // alert(_.join(["This is an alert", "Project 2 will be different", "Check it out!"], ". "));
         import _ from "lodash";

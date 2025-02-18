@@ -5,19 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Date Button</title>
-    <script type="module" crossorigin src="/client-side-demos/assets/project2-ems20pzl.js"></script>
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/lodash-CuKFpooT.js">
-    <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-D0alM7hR.css">
+    <script type="module" crossorigin src="/client-side-demos/assets/project2-C4VqcU5u.js"></script>
+    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/sitewide-Cp68rxAc.js">
+    <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-Bv-eL33C.css">
   </head>
   <body>
+    <header>
+      <div id="title">
+        <h1 class="no-margin">Frontend Portfolio</h1>
+        <p class="no-margin">by Zachary</p>
+      </div>
     <nav>
         <a href="../">Home</a>
         <a href="./about/">About</a>
-        <a href="../project-1/">Project 1: Alert Page</a>
-        <a href="../react/">React Project: </a>
+        <a href="../project-1/">Project 1: Lodash Alert</a>
+        <a href="./">Project 2: Date Button</a>
+        <a href="../react/">React Project: Animals List</a>
     </nav>
-    <h1>Project 2: Button Alert</h1>
-    <p>Click the button for today's date</p>
+    </header>
+    <main>
+      <h2>Project 2: Date Button</h2>
+      <p>Click this button for today's date in an alert</p>
+      <button id="dateButton">Show Date</button>
+      <p id="date"></p>
+    </main>
+    <div style="flex-grow: 1;"></div>
+    <footer>Created by Zachary F in February of 2025</footer>
   </body>
+  <!-- <script>
+    // Changed to a module script instead of lodash
+    // import _ from "lodash";
+    // function showAlert() {
+    //   //Convert the timestamp to a readble date
+    //   const date = new Date(_.now()).toLocaleString();
+    //   //Concat message with current date
+    //   const message = _.concat("Hello today's date is", date);
+    //   alert(message.join(" "));
+    // }
+    // const dateButton = document.getElementById("dateButton");
+    // dateButton.addEventListener("click", showAlert);
+  </script> -->
 </html>

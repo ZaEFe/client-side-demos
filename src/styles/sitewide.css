@@ -3,4 +3,64 @@
     background-color:black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+button {
+    font-size: large;
+}
+
+a {
+    color: rgb(57, 210, 221);
+}
+
+a:active {
+    color: blueviolet
+}
+
+a:active:visited {
+    color: rgb(165, 81, 81);
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 0.1rem;
+    flex-wrap: wrap;
+}
+
+#title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+footer {
+    font-size: small;
+    margin-block: 1em;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+header {
+    margin-block: 1em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-inline: 1em;
+    margin: 0;
+}
+
+#test {
+    display: block;
+    margin-block: 1em;
 }
