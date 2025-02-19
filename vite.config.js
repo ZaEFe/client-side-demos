@@ -13,7 +13,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "src/index.html"),
-                project1: resolve(__dirname, "src/demos-projects/project-1/index.html"),
+                clockDemo: resolve(__dirname, "src/demos-projects/clock/index.html"),
                 project2: resolve(__dirname, "src/demos-projects/project-2/index.html"),
                 about: resolve(__dirname, "src/demos-projects/about/index.html"),
                 react: resolve(__dirname, "src/demos-projects/react/index.html"),

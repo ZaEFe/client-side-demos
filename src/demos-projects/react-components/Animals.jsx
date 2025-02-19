@@ -25,6 +25,9 @@ const Animals = () => {
   return (
     <div>
       <h2>React Project: Animals List</h2>
+      <p>This project allows you to update an animal's name.</p>
+      <p>Functionality to change the type of pet and add more coming soon!</p>
+      <br></br>
       {animalList.map(animal => (
         <AnimalItem key={animal.id} animal={animal} updateAnimalName={updateAnimalName} />
       ))}

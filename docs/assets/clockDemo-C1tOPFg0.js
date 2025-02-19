@@ -1,0 +1,1 @@
+import"./sitewide-CfElwb1g.js";function o(){const e=document.querySelector("time"),t=Date.now();e.textContent=new Date(t).toLocaleTimeString(),e.dateTime=new Date(t).toISOString()}function n(){o(),setTimeout(()=>{n()},1e3)}n();
