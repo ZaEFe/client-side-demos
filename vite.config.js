@@ -13,10 +13,10 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, "src/index.html"),
-                project1: resolve(__dirname, "src/project-1/index.html"),
-                project2: resolve(__dirname, "src/project-2/index.html"),
-                about: resolve(__dirname, "src/about/index.html"),
-                react: resolve(__dirname, "src/react/index.html"),
+                project1: resolve(__dirname, "src/demos-projects/project-1/index.html"),
+                project2: resolve(__dirname, "src/demos-projects/project-2/index.html"),
+                about: resolve(__dirname, "src/demos-projects/about/index.html"),
+                react: resolve(__dirname, "src/demos-projects/react/index.html"),
             },
         },
     },
