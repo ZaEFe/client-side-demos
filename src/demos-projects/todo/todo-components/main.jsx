@@ -133,8 +133,10 @@ function App() {
   return (
     <>
       <header>
-        <img id="logo" src="/todo.svg" alt="Black check mark on Cyan" />
-        <h1>To Do App</h1>
+        <h1>Frontend Portfolio</h1>
+        
+        <img id="logo" src="/client-side-demos/todo.svg" alt="Black check mark on Cyan" />
+        <h2>To Do App</h2>
       </header>
       <main>
         <p role="status" ref={statusPEl} tabIndex={-1}>{status}</p>
