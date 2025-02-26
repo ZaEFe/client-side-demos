@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";/* empty css                 */function e(){const t=`Hello, today's date is ${new Date().toLocaleString()}`;alert(t)}const o=document.getElementById("dateButton");o.addEventListener("click",e);
