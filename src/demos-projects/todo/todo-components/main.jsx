@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { useState, useEffect, useRef } from 'react';
-import './index.css';
+import '../../../styles/todo.css';
 import { openDB, deleteDB } from 'idb';
 
 
