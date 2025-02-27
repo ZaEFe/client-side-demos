@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-inline: .5rem;
+  background-color: #242424 !important; /* Force dark mode */
 }
 
 header {
@@ -29,6 +30,15 @@ header {
   flex-wrap: wrap; 
   align-items: center; 
   gap: 10px; 
+}
+
+/* Added to prevent bootstrap ovverides of form formatting */
+fieldset {
+  border: 1px solid white;
+  padding: 1rem;
+}
+legend {
+  font-weight: bold;
 }
 
 h1, nav {
@@ -102,9 +112,9 @@ button:hover {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: black;
-    background-color: #ffffff;
+  :root, body {
+    color: black !important;
+    background-color: #ffffff !important;
   }
   button {
     color: white;
