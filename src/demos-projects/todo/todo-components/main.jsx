@@ -136,7 +136,7 @@ function App() {
       <header>
         <h1>Frontend Portfolio</h1>
         <nav>
-          <a href="../">Home</a>
+          <a href="../../">Home</a>
           <a href="../about/">About</a>
           <a href="../clock/">Project 1: Clock</a>
           <a href="../project-2/">Project 2: Date Button</a>
