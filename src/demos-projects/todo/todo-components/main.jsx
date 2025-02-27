@@ -134,7 +134,14 @@ function App() {
     <>
       <header>
         <h1>Frontend Portfolio</h1>
-        
+        <nav>
+          <a href="./">Home</a>
+          <a href="./demos-projects/about/">About</a>
+          <a href="./demos-projects/clock/">Project 1: Clock</a>
+          <a href="./demos-projects/project-2/">Project 2: Date Button</a>
+          <a href="./demos-projects/react/">React Project: Animals List</a>
+          <a href="./demos-projects/todo/">To Do List Project</a>
+        </nav>
         <img id="logo" src="/client-side-demos/todo.svg" alt="Black check mark on Cyan" />
         <h2>To Do App</h2>
       </header>
