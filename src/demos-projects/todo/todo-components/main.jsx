@@ -176,7 +176,7 @@ function App() {
           </ul>
         </article>
       </main>
-      <footer>Created by Zachary</footer>
+      <footer>Created by Zachary F w/ instruction from Nicholas Gardella 02/2025</footer>
     </>
   );
 }
