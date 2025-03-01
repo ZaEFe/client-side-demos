@@ -3,8 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { useState, useEffect, useRef } from 'react';
 import '../../../styles/todo.css';
 import { openDB, deleteDB } from 'idb';
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 
 async function upgradeToV1(db) {
   //gives the parameter db a new object store called todos

@@ -16,6 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Portfolio</title>
     <link rel="stylesheet" href="./styles/sitewide.css">
+    <script type="module" src="/styles/useBootstrap.js"></script>
   </head>
   <body>
     <header>
@@ -23,24 +24,32 @@
         <h1 class="no-margin">Frontend Portfolio</h1>
         <p class="no-margin">by Zachary</p>
       </div>
-    <nav>
-        <a href="./">Home</a>
-        <a href="./demos-projects/about/">About</a>
-        <a href="./demos-projects/clock/">Project 1: Clock</a>
-        <a href="./demos-projects/project-2/">Project 2: Date Button</a>
-        <a href="./demos-projects/react/">React Project: Animals List</a>
-        <a href="./demos-projects/todo/">To Do List Project</a>
+    <nav class="navbar" style="background-color: #e3f2fd;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/navbar_icon.svg/">
+        </a>
+      </div>
+      <a href="./">Home</a>
+      <a href="./demos-projects/about/">About</a>
+      <a href="./demos-projects/clock/">Project 1: Clock</a>
+      <a href="./demos-projects/project-2/">Project 2: Date Button</a>
+      <a href="./demos-projects/react/">React Project: Animals List</a>
+      <a href="./demos-projects/todo/">To Do List Project</a>
     </nav>
     </header>
     <main>
       <h2>Home Page</h2>
+      <button class="btn btn-primary">Bootstrap Primary button</button>
       <p>This is Zachary Fender's Project Home Page</p>
     </main>
     <div style="flex-grow: 1;"></div>
     <footer>Created by Zachary Fender 02/2025</footer>
   </body>
-  <script type="module" defer>
+
+  <!-- old feature, keeping for future reference
+   <script type="module" defer>
     import _ from "lodash";
     alert(_.join(["Hello", "Checkout the project pages."], "! "));
-  </script>
+  </script> -->
 </html>

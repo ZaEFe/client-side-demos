@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.77.6",
     "vite": "^6.0.5"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "@vitejs/plugin-react": "^4.3.4",
     "bootstrap": "^5.3.3",
     "idb": "^8.0.2",
