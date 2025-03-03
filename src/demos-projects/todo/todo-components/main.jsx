@@ -101,7 +101,7 @@ function App() {
         }
       });
   };
-  const todoUpdater = (todo) => () => {
+  const todoUpdater = (todo) => {
     // const setter = (t2) => (prevTodos) => {
     //   const index = prevTodos.findIndex((t1) => t1.id === t2.id);
     //   const newTodos = [...prevTodos];
@@ -198,7 +198,7 @@ function TodoListItem({ todo, todoRemover, todoUpdater }) {
   function onSubmit(e) {
     e.preventDefault();
     const newText = new FormData(e.target).get(inputName).trim();
-    const newTodo = { id, text };
+    const newTodo = { id, text: newText };
     todoUpdater(newTodo);
     setEditing(false);
   }
