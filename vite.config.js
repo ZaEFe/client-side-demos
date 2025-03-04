@@ -18,6 +18,7 @@ export default defineConfig({
                 about: resolve(__dirname, "src/demos-projects/about/index.html"),
                 react: resolve(__dirname, "src/demos-projects/react/index.html"),
                 todo: resolve(__dirname, "src/demos-projects/todo/index.html"),
+                simple_fetch: resolve(__dirname, "src/demos-projects/simple_fetch/index.html"),
             },
         },
     },

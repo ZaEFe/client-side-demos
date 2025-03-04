@@ -60,6 +60,7 @@ body {
     margin: 0;
 }
 
+
 #test {
     display: block;
     margin-block: 1em;
@@ -67,4 +68,14 @@ body {
 
 time {
     font-size: 3em;
+}
+
+/* Below Styles are for the Simple Fetch Container/Box that houses the data. */
+main.container#boxStyle {
+    /* Add your styles here */
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
