@@ -52,7 +52,7 @@ const AnimalItem = ({ animal, updateAnimalName }) => {
       <p>{animal.name} - Type: {animal.type}</p>
       <form onSubmit={handleSubmit}>
         <input type="text" value={newName} onChange={handleChange} />
-        <button type="submit">Update Name</button>
+        <button class="btn btn-secondary" type="submit">Update Name</button>
       </form>
     </div>
   );

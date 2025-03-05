@@ -12,12 +12,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/client-side-demos/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Portfolio</title>
-    <script type="module" crossorigin src="/client-side-demos/assets/main-Bf7_sxKh.js"></script>
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-DfJ8hlIh.css">
+    <script type="module" crossorigin src="/client-side-demos/assets/useBootstrap-B5thChz7.js"></script>
+    <link rel="stylesheet" crossorigin href="/client-side-demos/assets/useBootstrap-DEYEzf-H.css">
+    <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-DTSGm1lU.css">
   </head>
   <body>
     <header>
@@ -25,17 +25,59 @@
         <h1 class="no-margin">Frontend Portfolio</h1>
         <p class="no-margin">by Zachary</p>
       </div>
-    <nav>
-        <a href="./">Home</a>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid d-flex justify-content-between">
+          <!-- Left Side: Home + Hamburger -->
+          <div class="d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-lg-none ms-2" href="./" >Home Page</a>
+          </div>
+            
+        
+            <!-- Centered Navigation (Only visible when expanded) -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./demos-projects/about/">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./demos-projects/clock/">Clock</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./demos-projects/project-2/">Date Button</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./demos-projects/react/">React: Animal List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./demos-projects/todo/">To Do List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./demos-projects/simple_fetch/">Simple Fetch API</a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand ms-auto" href="./">
+            <img src="/client-side-demos/logo.svg" alt="Logo" width="30" height="24">
+          </a>
+        </div>
+        <!-- <a href="./">Home</a>
         <a href="./demos-projects/about/">About</a>
         <a href="./demos-projects/clock/">Project 1: Clock</a>
         <a href="./demos-projects/project-2/">Project 2: Date Button</a>
         <a href="./demos-projects/react/">React Project: Animals List</a>
-        <a href="./demos-projects/todo/">To Do List Project</a>
-    </nav>
+        <a href="./demos-projects/todo/">To Do List Project</a> 
+        <a href="./demos-projects/simple_fetch/">Simple Fetch API</a>-->
+      </nav>
     </header>
     <main>
       <h2>Home Page</h2>
+      <button class="btn btn-primary">Bootstrap Primary button</button>
       <p>This is Zachary Fender's Project Home Page</p>
     </main>
     <div style="flex-grow: 1;"></div>

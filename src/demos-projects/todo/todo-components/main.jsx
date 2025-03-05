@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { useState, useEffect, useRef } from 'react';
 import '../../../styles/todo.css';
+import '../../../styles/sitewide.scss';
+import Navbar from "../../react-components/todoNavbar";
 import { openDB, deleteDB } from 'idb';
 
 
@@ -134,14 +136,7 @@ function App() {
     <>
       <header>
         <h1>Frontend Portfolio</h1>
-        <nav>
-          <a href="../../">Home</a>
-          <a href="../about/">About</a>
-          <a href="../clock/">Project 1: Clock</a>
-          <a href="../project-2/">Project 2: Date Button</a>
-          <a href="../react/">React Project: Animals List</a>
-          <a href="./">To Do List Project</a>
-        </nav>
+        < Navbar />
         <img id="logo" src="/client-side-demos/todo.svg" alt="Black check mark on Cyan" />
         <h2>To Do App</h2>
       </header>

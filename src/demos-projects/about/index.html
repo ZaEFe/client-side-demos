@@ -16,27 +16,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Portfolio</title>
     <link rel="stylesheet" href="../../styles/sitewide.css">
+    <script type="module" src="/styles/useBootstrap.js"></script>
   </head>
   <body>
     <header>
-    <div id="title">
-      <h1 class="no-margin">Frontend Portfolio</h1>
-      <p class="no-margin">by Zachary</p>
-    </div>
-    <nav>
-        <a href="../../">Home</a>
-        <a href="./">About</a>
-        <a href="../clock/">Project 1: Clock</a>
-        <a href="../project-2/">Project 2: Date Button</a>
-        <a href="../react/">React Project: Animals List</a>
-        <a href="../todo/">To Do List Project</a>
-    </nav>
+      <div id="title">
+        <h1 class="no-margin">Frontend Portfolio</h1>
+        <p class="no-margin">by Zachary</p>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid d-flex justify-content-between">
+          <!-- Left Side: Home + Hamburger -->
+          <div class="d-flex align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand d-lg-none ms-2" href="../../" >Go Home</a>
+          </div>
+            
+          <!-- Center Navigation (Only visible on large screens) -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../clock/">Clock</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../project-2/">Date Button</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../react/">React: Animal List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../todo/">To Do List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../simple_fetch/">Simple Fetch API</a>
+              </li>
+            </ul>
+          </div>
+          <a class="navbar-brand ms-auto" href="./">
+            <img src="/logo.svg" alt="Logo" width="30" height="24"/>
+          </a>
+        </div>
+      </nav>
     </header>
     <main>
       <h2>About Page</h2>
       <p>This site is to show some of the projects I've worked on in class</p>
       <a href="../../">Go up two (Home Page)</a> 
-      <button id="test">Test Button</button>
+      <button class="btn btn-primary" id="test">Test Button</button>
     </main>
     <div style="flex-grow: 1;"></div>
     <footer>Created by Zachary F w/ instruction from Nicholas Gardella 02/2025</footer>

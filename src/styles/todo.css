@@ -49,15 +49,18 @@ h1 {
   margin-bottom: 10px; 
 }
 
-nav {
+
+nav { 
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; /* Spacing between links */
+  gap: 1rem; 
 }
 nav a {
-  white-space: nowrap; /* Prevents words inside links from breaking */
+  white-space: nowrap;
 
 }
+
+
 img {
   height: 50px; 
 }

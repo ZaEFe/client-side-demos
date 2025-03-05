@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";/* empty css                 */function o(){const e=document.querySelector("time"),t=Date.now();e.textContent=new Date(t).toLocaleTimeString(),e.dateTime=new Date(t).toISOString()}function n(){o(),setTimeout(()=>{n()},1e3)}n();
