@@ -9,14 +9,14 @@ const Navbar = () => {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand d-lg-none ms-2" href="../">Home Page</a>
+          <a className="navbar-brand d-lg-none ms-2" href="../../">Home Page</a>
         </div>
 
         {/* Centered Navigation (Only visible when expanded) */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="../">Home</a>
+              <a className="nav-link active" aria-current="page" href="../../">Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="../about/">About</a>
@@ -36,6 +36,9 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="../simple_fetch/">Simple Fetch API</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../local_fetch/">Local Fetch API</a>
+              </li>
           </ul>
         </div>
 

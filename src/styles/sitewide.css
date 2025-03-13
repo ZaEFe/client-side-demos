@@ -60,6 +60,12 @@ body {
     margin: 0;
 }
 
+container#instructions {
+    display: block;
+    margin: 1em;
+    padding: .2em;
+    border-radius: 10px;
+}
 
 #test {
     display: block;
@@ -70,12 +76,19 @@ time {
     font-size: 3em;
 }
 
-/* Below Styles are for the Simple Fetch Container/Box that houses the data. */
+/* Below Styles are for the Simple Fetch */
 main.container#boxStyle {
-    /* Add your styles here */
+    
     background-color: #f8f9fa; /* Light gray background */
     padding: 20px; /* Padding inside the container */
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+div#outputAPI::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
 }

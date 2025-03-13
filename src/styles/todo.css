@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-inline: .5rem;
-  background-color: #242424 !important; /* Force dark mode */
+
 }
 
 header {
@@ -61,9 +61,9 @@ nav a {
 }
 
 
-img {
+/* img {
   height: 50px; 
-}
+} */
 
 h2 {
   margin-left: 10px; 

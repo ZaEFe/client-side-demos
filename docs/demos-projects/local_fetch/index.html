@@ -1,14 +1,10 @@
 <!-- 
   Project: Web Scripting Demos
-  File: React Page
+  File: About Page
   Author: Zachary Fender
   Created: February 2025
-  Description: This is a react page with an animal list
+  Description: This is the about me page for my Web Scripting Demos final project
   Notes: 
-    - further functionality needed.
-      - edit animal type
-      - save list
-      - export list
   Version: 1.0
 -->
 
@@ -16,12 +12,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/client-side-demos/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Date Button</title>
-    <script type="module" crossorigin src="/client-side-demos/assets/react-CShwqz5_.js"></script>
+    <title>Frontend Portfolio</title>
+    <script type="module" crossorigin src="/client-side-demos/assets/local_fetch-BtnfcwVV.js"></script>
     <link rel="modulepreload" crossorigin href="/client-side-demos/assets/useBootstrap-B5thChz7.js">
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/index-ByYvoH3u.js">
     <link rel="stylesheet" crossorigin href="/client-side-demos/assets/useBootstrap-DEYEzf-H.css">
     <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-YCZ-kIa8.css">
   </head>
@@ -57,7 +52,7 @@
                 <a class="nav-link" href="../project-2/">Date Button</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./">React: Animal List</a>
+                <a class="nav-link" href="../react/">React: Animal List</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../todo/">To Do List</a>
@@ -76,8 +71,19 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="container" id="boxStyle">
+      <h2>Local Fetch Demo</h2>
+      <p>This is a demo of a dockerized Random Number Generator running on a local-fetch API (server).</p>
+      <p>For setup instructions, follow the README at: <a href="https://github.com/ZaEFe/random-number-express-app">https://github.com/ZaEFe/random-number-express-app</a>
+      </p>
+      <ul>
+        <li>Once you've setup the API, the following button will fetch the randomly generated numbers.</li>
+        <li>If you encounter an error you will see a message explaining the issue.</li>
+      </ul>
+      <button class="btn btn-primary" id="local_fetch">Test the above API</button>
+      <div id="outputAPI"></div>
+    </main>
     <div style="flex-grow: 1;"></div>
-    <footer>Created by Zachary Fender 02/2025</footer>
+    <footer>Created by Zachary F w/ instruction from Nicholas Gardella 02/2025</footer>
   </body>
 </html>
