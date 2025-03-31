@@ -38,7 +38,10 @@ const Navbar = () => {
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="../local_fetch/">Local Fetch API</a>
-              </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../jeopardy_app/">Jeopardy App</a>
+            </li>
           </ul>
         </div>
 
