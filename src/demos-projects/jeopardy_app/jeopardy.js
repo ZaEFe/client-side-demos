@@ -1,6 +1,7 @@
 function routeToPage(page) {
     const appRouting = document.querySelector('.app-routing');
     appRouting.innerHTML = ''; 
+    
 
     fetch(`../html/${page}.html`)
         .then(response => {

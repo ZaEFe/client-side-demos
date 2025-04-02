@@ -15,7 +15,7 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Portfolio</title>
-    <link rel="stylesheet" href="../../styles/sitewide.css" />
+    <link rel="stylesheet" href="../../styles/sitewide.css"/>
     <script type="module" src="/styles/useBootstrap.js"></script>
   </head>
   <body>
@@ -82,16 +82,18 @@
         </div>
       </nav>
     </header>
-    <main class="container" id="boxStyle" name="jeopardy_app">
-      <h2 style="text-align: center;">Jeopardy Application</h2>
-      <p style="text-align: center;">
-        This is a simple Jeopardy game that uses fetch requests to pull questions from an API
-      </p>
-      <p class="remove_on_start" style="text-align: center;">Click below to play.</p>
-      <div class="remove_on_start" style="display: flex; justify-content: center;">
-        <button class="btn btn-primary" id="start_jeopardy">
-        Start Jeopardy
-        </button>
+    <main>
+      <div class="container" id="boxStyle" name="jeopardy_app">
+        <h2 style="text-align: center;">Jeopardy Application</h2>
+        <p style="text-align: center;">
+          This is a simple Jeopardy game that uses fetch requests to pull questions from an API
+        </p>
+        <p class="remove_on_start" style="text-align: center;">Click below to play.</p>
+        <div class="remove_on_start" style="display: flex; justify-content: center;">
+          <button class="btn btn-primary" id="start_jeopardy">
+          Start Jeopardy
+          </button>
+        </div>
       </div>
       <div id="output_jeopardy"></div>
     </main>
