@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy</title>
+    <link rel="stylesheet" href="./jeopardy.css">
+    <script src="../../../scripts/jeopardy_app.js" defer></script>
+</head>
+<body>
+    <header id="banner">
+        <!--This is the lettering-->
+        <div id="left_section">
+            <h1 id="logo">NRCC Jeopardy</h1>
+        </div>
+            
+        <!--These are settings for sound and timer more can be added or removed-->    
+        <div name="settings" id="middle_section">
+            <div>
+                <input type="checkbox" id="sound_toggle" />
+                <label class="labels" for="sound_toggle">Mute/Unmute</label>
+            </div>
+            <div>
+                <input type="checkbox" id="timer_toggle" />
+                <label class="labels" for="timer_toggle">Timer On/Off</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lights_toggle" />
+                <label class="labels" for="lights_toggle">Toggle Lights</label>
+            </div>
+        </div>
+
+        <!--This is the score board-->
+        <div name="scoreboard" id="right_section">
+            <h3 id="player_score">Player 1 Score: 0</h2>
+        </div>
+        
+    </header>
+    <main>
+        <div id="game_board">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="cat1">Category Title</th>
+                        <th id="cat2">Category Title</th>
+                        <th id="cat3">Category Title</th>
+                        <th id="cat4">Category Title</th>
+                        <th id="cat5">Category Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script>
+                        const tbody = document.createElement('tbody');
+                        const categories = 5;
+                        const questions = 5;
+                        const values = [100, 200, 300, 400, 500];
+
+                        for (let i = 0; i < questions; i++) {
+                            const row = document.createElement('tr');
+                            for (let j = 0; j < categories; j++) {
+                                const cell = document.createElement('td');
+                                cell.id = `cat${j + 1}q${i + 1}`;
+                                cell.textContent = `$${values[i]}`;
+                                row.appendChild(cell);
+                            }
+                            tbody.appendChild(row);
+                        }
+
+                        document.querySelector('#game_board table').appendChild(tbody);
+                    </script>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -19,7 +19,8 @@
 // }
 
 
-// This is for the intro page/clip of the game
+// This is to route to different pages
+import { routeToPage } from '../../../scripts/jeopardy_app.js';
 
 // This function is to begin the intro screen
 function startButton() {
@@ -75,7 +76,7 @@ function startButton() {
     }, (logoSpan.length + 1) * 400);
 
     setTimeout(() => {
-        window.location.href = '../html/setup.html';
+        routeToPage(setup)
     }, (logoSpan.length + 1) * 400 + 1000);
 }, 100);
     
