@@ -1,14 +1,10 @@
 <!-- 
   Project: Web Scripting Demos
-  File: React Page
+  File: Resume Page
   Author: Zachary Fender
-  Created: February 2025
-  Description: This is a react page with an animal list
+  Created: May 19, 2025
+  Description: This is an extended resume page for my Web Scripting Demos/Resume project file
   Notes: 
-    - further functionality needed.
-      - edit animal type
-      - save list
-      - export list
   Version: 1.0
 -->
 
@@ -54,7 +50,7 @@
                 <a class="nav-link" href="../project-2/">Date Button</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./">React: Animal List</a>
+                <a class="nav-link" href="../react/">React: Animal List</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../todo/">To Do List</a>
@@ -79,10 +75,14 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h2 id="pagetitle">Extended Resume</h2>
+      <p>Click this button for today's date in an alert</p>
+      <button class="btn btn-primary" id="dateButton">Show Date</button>
+      <p id="date"></p>
+    </main>
     <div style="flex-grow: 1;"></div>
-    <footer>Created by Zachary Fender 02/2025</footer>
+    <footer>Created by Zachary F. 02/2025</footer>
   </body>
-  <script type="module" src="../react-components/reactRoot.jsx">
-  </script>
+  <script type="module" src="../../scripts/button_alert.js"></script>
 </html>

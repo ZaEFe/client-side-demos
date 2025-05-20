@@ -21,6 +21,7 @@ export default defineConfig({
                 simple_fetch: resolve(__dirname, "src/demos-projects/simple_fetch/index.html"),
                 local_fetch: resolve(__dirname, "src/demos-projects/local_fetch/index.html"),
                 jeopardy_app: resolve(__dirname, "src/demos-projects/jeopardy_app/index.html"),
+                resume: resolve(__dirname, "src/demos-projects/resume/index.html"),
             },
         },
     },

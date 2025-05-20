@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark">
+    <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid d-flex justify-content-between">
         {/* Left Side: Home + Hamburger */}
         <div className="d-flex align-items-center">
@@ -36,18 +36,21 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="../simple_fetch/">Simple Fetch API</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../local_fetch/">Local Fetch API</a>
+            <li className="nav-item">
+                <a className="nav-link" href="../local_fetch/">Local Fetch API</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../jeopardy_app/">Jeopardy App</a>
+            <li className="nav-item">
+                <a className="nav-link" href="../jeopardy_app/">Jeopardy App</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="../resume/">Resume</a>
             </li>
           </ul>
         </div>
 
         {/* Logo on the Right */}
         <a className="navbar-brand ms-auto" href="./">
-          <img src="/logo.svg" alt="Logo" width="30" height="24" />
+          <img src="/client-side-demos/logo.svg" alt="Logo" width="30" height="24" />
         </a>
       </div>
     </nav>
