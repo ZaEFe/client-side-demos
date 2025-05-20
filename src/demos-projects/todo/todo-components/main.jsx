@@ -219,6 +219,7 @@ function SingleTextInputForm({ onSubmit, inputName, buttonText, placeholder = ""
   function customValidator(e) {
     const input = e.target;
     input.setCustomValidity("");
+
     if (!input.validity.valid && input.validity.patternMismatch) {
       input.setCustomValidity("Entry must not be all white spaces, or begin with a white space.");
     }
@@ -228,7 +229,11 @@ function SingleTextInputForm({ onSubmit, inputName, buttonText, placeholder = ""
       <fieldset>
         <legend>Add a to do item</legend>
         <label htmlFor={inputName}>Text Content</label>
-        <input type="text"  name={inputName} {...{placeholder, defaultValue }} 
+        <input 
+        id={inputName}
+        name={inputName} 
+        type="text"  
+        {...{placeholder, defaultValue }} 
         required
         autoComplete="off"
         // pattern for allowing spaces between words but not only spaces
