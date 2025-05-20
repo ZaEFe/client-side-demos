@@ -52,6 +52,27 @@ header {
     margin-block: 1em;
 }
 
+#pagetitle::after {
+    content: "";
+    display: block;
+    height: 3px; /* Thickness */
+    background-color: #ccc;
+    margin: 5px auto 0; /* Centers the line */
+}
+
+#resumeButton {
+    display: block;
+    margin: auto;
+}
+
+#afterresume::before {
+    content: "";
+    display: block;
+    height: 3px; /* Thickness */
+    background-color: #ccc;
+    margin: 5px auto 0; /* Centers the line */
+}
+
 body {
     display: flex;
     flex-direction: column;

@@ -1,14 +1,10 @@
 <!-- 
   Project: Web Scripting Demos
-  File: React Page
+  File: Resume Page
   Author: Zachary Fender
-  Created: February 2025
-  Description: This is a react page with an animal list
+  Created: May 19, 2025
+  Description: This is an extended resume page for my Web Scripting Demos/Resume project file
   Notes: 
-    - further functionality needed.
-      - edit animal type
-      - save list
-      - export list
   Version: 1.0
 -->
 
@@ -18,10 +14,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React Test</title>
-    <script type="module" crossorigin src="/client-side-demos/assets/react-j8Efm0h4.js"></script>
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/useBootstrap-B5thChz7.js">
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/index-ByYvoH3u.js">
+    <title>Resume Page</title>
+    <script type="module" crossorigin src="/client-side-demos/assets/useBootstrap-B5thChz7.js"></script>
     <link rel="stylesheet" crossorigin href="/client-side-demos/assets/useBootstrap-DEYEzf-H.css">
     <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-Dy5JsN7l.css">
   </head>
@@ -57,7 +51,7 @@
                 <a class="nav-link" href="../project-2/">Date Button</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./">React: Animal List</a>
+                <a class="nav-link" href="../react/">React: Animal List</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../todo/">To Do List</a>
@@ -82,8 +76,25 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h2 id="pagetitle">Resume</h2>
+      <p style="text-align: center;">Welcome to my resume page. Click the following button to toggle resume below.</p>
+      <button onclick="toggleResume()" class="btn btn-primary" id="resumeButton">Show Resume</button>
+      <p id="pdf-container" style="display: none;">
+        <iframe src="/client-side-demos/resume.pdf#zoom=100" width="100%" height="600px"></iframe>
+      </p>
+      <div id="afterresume">
+        <p style="text-align: center;">If you're interested in further job history you can scroll below, or check out my Indeed resume <a href="https://profile.indeed.com/p/zacharyf-4jsy6af">here</a>.</p>
+      </div>
+
+    </main>
     <div style="flex-grow: 1;"></div>
-    <footer>Created by Zachary Fender 02/2025</footer>
-  </body>
+    <footer>Created by Zachary F. 02/2025</footer>
+  </body>
+  <script>
+    function toggleResume() {
+      const container = document.getElementById('pdf-container');
+      container.style.display = container.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
 </html>

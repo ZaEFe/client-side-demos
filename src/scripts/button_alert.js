@@ -8,3 +8,4 @@ function showAlert() {
 
 const dateButton = document.getElementById("dateButton");
 dateButton.addEventListener("click", showAlert);
+
