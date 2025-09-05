@@ -135,7 +135,10 @@ function App() {
   return (
     <>
       <header>
-        <h1>Frontend Portfolio</h1>
+        <div id="title">
+          <h1 class="no-margin">Frontend Portfolio</h1>
+          <p class="no-margin">by Zachary F.</p>
+        </div>
         < Navbar />
         <img id="logo" src="/client-side-demos/todo.svg" alt="Black check mark on Cyan" />
         <h2>To Do App</h2>
