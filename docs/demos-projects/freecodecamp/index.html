@@ -1,23 +1,27 @@
 <!-- 
   Project: Web Scripting Demos
-  File: Date Button
+  File: About Page
   Author: Zachary F.
-  Created: February 2025
+  Created: September 2025
   Last Modified: September 7, 2025
-  Description: This is the a page with a button that gives the date
-  Notes: 
-  Version: 1.0.1
+  Description: This page is to host projects that I created while following FreeCodeCamp's curriculum
+  Notes:
+    - Decide between the following layout options:
+      - Single page with multiple sections for each project
+      - Separate pages for each project with a main index page linking to them 
+    - Either make projects appear as pop ups selected with a drop down 
+    - Create multiple container boxes to host
+  Version: 1.0
 -->
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/client-side-demos/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Date Button</title>
-    <script type="module" crossorigin src="/client-side-demos/assets/project2-Dip0A5lm.js"></script>
-    <link rel="modulepreload" crossorigin href="/client-side-demos/assets/useBootstrap-B5thChz7.js">
+    <title>FreeCodeCamp Projects</title>
+    <script type="module" crossorigin src="/client-side-demos/assets/useBootstrap-B5thChz7.js"></script>
     <link rel="stylesheet" crossorigin href="/client-side-demos/assets/useBootstrap-DEYEzf-H.css">
     <link rel="stylesheet" crossorigin href="/client-side-demos/assets/sitewide-Dy5JsN7l.css">
   </head>
@@ -31,17 +35,27 @@
         <div class="container-fluid d-flex justify-content-between">
           <!-- Left Side: Home + Hamburger -->
           <div class="d-flex align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand d-lg-none ms-2" href="../../" >Go Home</a>
+            <a class="navbar-brand d-lg-none ms-2" href="../../">Go Home</a>
           </div>
-            
+
           <!-- Center Navigation (Only visible on large screens) -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../">Home</a>
+                <a class="nav-link active" aria-current="page" href="../../"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../about/">About</a>
@@ -76,31 +90,35 @@
             </ul>
           </div>
           <a class="navbar-brand ms-auto" href="./">
-            <img src="/client-side-demos/logo.svg" alt="Logo" width="30" height="24"/>
+            <img src="/client-side-demos/logo.svg" alt="Logo" width="30" height="24" />
           </a>
         </div>
       </nav>
     </header>
+    <h2>FreeCodeCamp Projects</h2>
+    <p>
+        This page is to show off some of the projects/pages I've done while following along with FreeCodeCamp's curriculum. Eventually they will all have their own styling.
+    </p>
     <main>
-      <h2 id="pagetitle">Project 2: Date Button</h2>
-      <p>Click this button for today's date in an alert</p>
-      <button class="btn btn-primary" id="dateButton">Show Date</button>
-      <p id="date"></p>
+        <div class="container" id="boxStyle">
+        <h2>FreeCodeCamp Project 1</h2> 
+        <p>
+            *To Be Added Soon*
+        </p>
+        <button class="btn btn-primary" id="">
+            No Current Function
+        </button>
+        <div id="outputAPI"></div>
+        </div>
+        <div class="container" id="boxStyle">
+            <h2>FreeCodeCamp Project 2</h2>
+        </div>
     </main>
-    <div style="flex-grow: 1;"></div>
-    <footer>Created by Zachary F. 02/2025</footer>
-  </body>
-  <!-- <script>
-    // Changed to a module script instead of lodash
-    // import _ from "lodash";
-    // function showAlert() {
-    //   //Convert the timestamp to a readble date
-    //   const date = new Date(_.now()).toLocaleString();
-    //   //Concat message with current date
-    //   const message = _.concat("Hello today's date is", date);
-    //   alert(message.join(" "));
-    // }
-    // const dateButton = document.getElementById("dateButton");
-    // dateButton.addEventListener("click", showAlert);
-  </script> -->
+    <div style="flex-grow: 1"></div>
+    <footer>
+      Created by Zachary F. 09/2025
+    </footer>
+  </body>
+  <!-- Uncomment the script below when functionality is added.-->
+  <!-- <script type="module" src="../../scripts/addsourcelater.js" defer></script> -->
 </html>

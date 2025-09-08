@@ -244,7 +244,7 @@ function SingleTextInputForm({ onSubmit, inputName, buttonText, placeholder = ""
         ref={inputRef}
         onInvalid={customValidator}
         onInput={customValidator}
-        // pattern for no whitespace characters only
+        // pattern for no whitespace characters
         // pattern="^\S+$"
         />
         <button type="submit">{buttonText}</button>

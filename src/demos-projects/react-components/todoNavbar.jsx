@@ -1,3 +1,14 @@
+/*
+  Project: Web Scripting Demos
+  File: React Page
+  Author: Zachary F.
+  Created: February 2025
+  Last Modified: September 7, 2025
+  Description: This is a react page with an animal list
+  Notes: 
+    - figure out how to add react navbar to all pages.
+  Version: 1.0
+*/
 import React from 'react';
 
 const Navbar = () => {
@@ -44,6 +55,9 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="../resume/">Resume</a>
+            </li>
+            <li className="nav-item">
+                <a className="nav-link" href="../freecodecamp/">FreeCodeCamp Projects</a>
             </li>
           </ul>
         </div>

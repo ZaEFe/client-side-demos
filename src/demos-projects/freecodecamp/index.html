@@ -2,10 +2,15 @@
   Project: Web Scripting Demos
   File: About Page
   Author: Zachary F.
-  Created: February 2025
+  Created: September 2025
   Last Modified: September 7, 2025
-  Description: This is the local-fetch project page for my Web Scripting Demos final project
-  Notes: 
+  Description: This page is to host projects that I created while following FreeCodeCamp's curriculum
+  Notes:
+    - Decide between the following layout options:
+      - Single page with multiple sections for each project
+      - Separate pages for each project with a main index page linking to them 
+    - Either make projects appear as pop ups selected with a drop down 
+    - Create multiple container boxes to host
   Version: 1.0
 -->
 
@@ -15,7 +20,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Local Fetch API</title>
+    <title>FreeCodeCamp Projects</title>
     <link rel="stylesheet" href="../../styles/sitewide.css" />
     <script type="module" src="/styles/useBootstrap.js"></script>
   </head>
@@ -89,37 +94,30 @@
         </div>
       </nav>
     </header>
-    <main class="container" id="boxStyle">
-      <h2>Local Fetch Demo</h2>
-      <p>
-        This is a demo of a dockerized Random Number Generator running on a
-        local-fetch API (server).
-      </p>
-      <p>
-        For setup instructions, follow the README at:
-        <a href="https://github.com/ZaEFe/random-number-express-app"
-          >https://github.com/ZaEFe/random-number-express-app</a
-        >
-      </p>
-      <ul>
-        <li>
-          Once you've setup the API, the following button will fetch the
-          randomly generated numbers from the API.
-        </li>
-        <li>
-          If you encounter an error, you will see a message explaining the
-          issue.
-        </li>
-      </ul>
-      <button class="btn btn-primary" id="local_fetch">
-        Test the above API
-      </button>
-      <div id="outputAPI"></div>
+    <h2>FreeCodeCamp Projects</h2>
+    <p>
+        This page is to show off some of the projects/pages I've done while following along with FreeCodeCamp's curriculum. Eventually they will all have their own styling.
+    </p>
+    <main>
+        <div class="container" id="boxStyle">
+        <h2>FreeCodeCamp Project 1</h2> 
+        <p>
+            *To Be Added Soon*
+        </p>
+        <button class="btn btn-primary" id="">
+            No Current Function
+        </button>
+        <div id="outputAPI"></div>
+        </div>
+        <div class="container" id="boxStyle">
+            <h2>FreeCodeCamp Project 2</h2>
+        </div>
     </main>
     <div style="flex-grow: 1"></div>
     <footer>
-      Created by Zachary F. w/ instruction from Nicholas Gardella 02/2025
+      Created by Zachary F. 09/2025
     </footer>
   </body>
-  <script type="module" src="../../scripts/local_fetch.js" defer></script>
+  <!-- Uncomment the script below when functionality is added.-->
+  <!-- <script type="module" src="../../scripts/addsourcelater.js" defer></script> -->
 </html>

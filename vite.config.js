@@ -22,6 +22,7 @@ export default defineConfig({
                 local_fetch: resolve(__dirname, "src/demos-projects/local_fetch/index.html"),
                 jeopardy_app: resolve(__dirname, "src/demos-projects/jeopardy_app/index.html"),
                 resume: resolve(__dirname, "src/demos-projects/resume/index.html"),
+                freecodecamp: resolve(__dirname, "src/demos-projects/freecodecamp/index.html"),
             },
         },
     },
